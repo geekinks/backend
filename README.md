@@ -8,7 +8,7 @@
 
 ## 📖 About The Project
 
-!()[./System.png]
+![](./System.png)
 
 event management API designed to simplify how communities organize gatherings. It allows organizers to create events, users to register, and staff to manage event-day check-ins securely.
 
