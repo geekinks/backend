@@ -8,6 +8,8 @@
 
 ## 📖 About The Project
 
+!()[./system.png]
+
 event management API designed to simplify how communities organize gatherings. It allows organizers to create events, users to register, and staff to manage event-day check-ins securely.
 
 This project uses a **Layered Architecture** (Controller-Service-Model), making it an excellent resource for learning scalable backend development with Node.js and TypeScript.
