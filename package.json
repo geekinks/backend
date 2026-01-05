@@ -1,21 +1,28 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "├── src/ │   ├── config/           # Database connection & env variables │   ├── controllers/      # (The Receptionists) │   │   ├── auth.controller.ts │   │   ├── event.controller.ts │   │   └── ... │   ├── interfaces/       # (The Contracts - TypeScript types) │   │   ├── event.interface.ts │   │   └── user.interface.ts │   ├── middlewares/      # (The Guards) │   │   ├── auth.middleware.ts │   │   └── error.middleware.ts │   ├── models/           # (The Database Structure - Mongoose) │   │   ├── event.model.ts │   │   └── user.model.ts │   ├── routes/           # (The Entry Points) │   │   ├── auth.routes.ts │   │   ├── event.routes.ts │   │   └── ... │   ├── services/         # (The Business Logic) │   │   ├── auth.service.ts │   │   ├── event.service.ts │   │   └── ... │   ├── utils/            # Helper functions │   └── app.ts            # Entry point (Server setup) ├── .env ├── package.json └── tsconfig.json",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "> **A robust backend system for managing events, registrations, and attendance.",
+  "homepage": "https://github.com/geekinks/backend#readme",
+  "bugs": {
+    "url": "https://github.com/geekinks/backend/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/geekinks/backend.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/geekinks/backend/issues"
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js"
   },
-  "homepage": "https://github.com/geekinks/backend#readme"
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.11"
+  }
 }
